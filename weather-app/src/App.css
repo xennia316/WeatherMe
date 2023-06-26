@@ -1,11 +1,75 @@
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  color: linear-gradient(to right, #11998e,#38ef7d);
 }
+
+.form_group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input{
+  height: 2rem;
+  width: 12rem;
+  /* margin: 0 6rem; */
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 1.3rem;
+  color:  #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  /* &::placeholder {
+    color: transparent;
+  } */
+
+  &:placeholder-shown ~ .form_label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form_label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: transparent;
+}
+
+.input:focus {
+  ~ .form_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight:700;    
+  }
+
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e,#38ef7d);
+  border-image-slice: 1;
+}
+
+.input{
+&:required,&:invalid { box-shadow:none; }
+ }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -24,10 +88,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +96,4 @@
     transform: rotate(360deg);
   }
 }
+
