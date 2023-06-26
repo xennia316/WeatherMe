@@ -15,7 +15,6 @@ const App = () => {
 			.then((res) => res.json())
 			.then((result) => {
 				setWeather(result);
-				console.log(result);
 			});
 	};
 
@@ -23,18 +22,25 @@ const App = () => {
 		<div className="App">
 			<header className="App-header">
 				{/* Header goes here */}
-				<h1>Weather Me</h1>
+				<h1 className="title">Weather Me</h1>
 
 				{/* Search Box */}
 
-				<div>
-					<input
-						placeholder="Enter your city"
-						type="text"
-						onChange={(e) => {
-							setSearch(e.target.value);
-						}}
-					/>
+				<div className="form_group">
+					<div>
+						<input
+							className="input"
+							placeholder="Enter your city"
+							type="text"
+							onChange={(e) => {
+								setSearch(e.target.value);
+							}}
+						/>
+						<label for="city" className="form_label">
+							{" "}
+							City
+						</label>
+					</div>
 					<button onClick={searching}>Search</button>
 				</div>
 
