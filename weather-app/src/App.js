@@ -41,7 +41,9 @@ const App = () => {
 							City
 						</label>
 					</div>
-					<button onClick={searching}>Search</button>
+					<button className="button" onClick={searching}>
+						Search
+					</button>
 				</div>
 
 				{typeof weather.main != "undefined" ? (
