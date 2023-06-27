@@ -71,6 +71,19 @@
 &:required,&:invalid { box-shadow:none; }
  }
 
+
+ .button{
+  padding: 0.5rem;
+  width: 6rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #282c34;
+  border-radius: 8px;
+  outline: none;
+  border: 0;
+ }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
