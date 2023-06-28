@@ -47,11 +47,31 @@ const App = () => {
 				</div>
 
 				{typeof weather.main != "undefined" ? (
-					<div>
-						<p>{weather.name}</p>
-						<p>{weather.main.temp}</p>
-						<p>{weather.weather[0].main}</p>
-						<p>{weather.weather[0].description}</p>{" "}
+					<div className="text">
+						<p className="head">
+							Weather forecast for{" "}
+							<b className="bold">
+								<em>{weather.name}</em>
+							</b>{" "}
+						</p>
+						<p>
+							Temperature: &nbsp;{" "}
+							<b className="bold">
+								<em>{weather.main.temp}</em>
+							</b>
+						</p>
+						<p>
+							Atmosphere: &nbsp;{" "}
+							<b className="bold">
+								<em>{weather.weather[0].main}</em>
+							</b>
+						</p>
+						<p>
+							Description: &nbsp;{" "}
+							<b className="bold">
+								<em>{weather.weather[0].description}</em>
+							</b>
+						</p>{" "}
 					</div>
 				) : (
 					""
