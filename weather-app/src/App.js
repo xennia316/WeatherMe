@@ -74,7 +74,7 @@ const App = () => {
 						</p>{" "}
 					</div>
 				) : (
-					""
+					<p className="text">Sorry, We could not find this city</p>
 				)}
 			</header>
 		</div>
