@@ -4,7 +4,7 @@
   font-family: "Poppins", sans-serif;
 }
 .title{
-  color: linear-gradient(to right, #11998e,#38ef7d);
+  color: #FFC300;
 }
 
 .form_group {
@@ -57,14 +57,14 @@
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #11998e;
+    color: #FFC300;
     font-weight:700;    
   }
 
   padding-bottom: 6px;  
   font-weight: 700;
   border-width: 3px;
-  border-image: linear-gradient(to right, #11998e,#38ef7d);
+  border-image: linear-gradient(to right, #FFC300, #001D3D);
   border-image-slice: 1;
 }
 
@@ -96,7 +96,7 @@
  }
 
  .bold{
-  color: #11998e;
+  color: #FFC300;
  }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -106,7 +106,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #212121;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
