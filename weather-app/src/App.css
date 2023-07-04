@@ -30,9 +30,9 @@
   background: transparent;
   transition: border-color 0.2s;
 
-  /* &::placeholder {
-    color: transparent;
-  } */
+  &::placeholder {
+    color: #FFC300;
+  }
 
   &:placeholder-shown ~ .form_label {
     font-size: 1.3rem;
@@ -66,6 +66,10 @@
   border-width: 3px;
   border-image: linear-gradient(to right, #FFC300, #001D3D);
   border-image-slice: 1;
+
+  &::placeholder{
+    color: transparent;
+  }
 }
 
 .input{
