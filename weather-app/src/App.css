@@ -11,6 +11,7 @@
 	border-width: 5px;
 	border-color: #fff;
 	border-radius: 24px;
+	text-align: left;
 }
 .form_group {
 	position: relative;
